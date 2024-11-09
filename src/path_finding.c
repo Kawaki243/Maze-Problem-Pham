@@ -54,6 +54,7 @@ bool isWall(Maze* maze, int current_height,int current_width, int direction){
     if(direction == 3){ // check if there is a wall is down to the current cell or not
         return maze->grid[current_height][current_width].down;
     }
+    return true; // if not then there is a wall
 }
 
 // This function creates a stack of cells in the path from start cell to the end cell
